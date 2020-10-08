@@ -22,7 +22,7 @@
 
 ## `Deployed the WordPress Application on Kubernetes and MySQL Database on AWS Cloud using Terraform Code`
 
-# wp.tf File-
+# <p align="center">wp.tf File</p>
 ## It will launch the Wordpress Application.
 
 ```
@@ -87,7 +87,7 @@ resource "kubernetes_service" "wordpresslb" {
 }
 ```
 
-# dbsql.tf File
+#  <p align="center">dbSQL.tf File</p>
 ## It will create the RDS on top of AWS.
 ```
 provider "aws" {
@@ -114,7 +114,7 @@ resource "aws_db_instance" "mydb" {
 }
 ```
 
-# main.tf File-
+#  <p align="center">main.tf File</p>
 ## It will provide the IP to connect to Wordpress.
 
 ```
@@ -132,44 +132,66 @@ resource "null_resource" "minikubeservice" {
 ```
 
 # When we run this RDS will be created on top of AWS.
+
 ![image](https://user-images.githubusercontent.com/61896468/95456437-eeb76580-098c-11eb-856d-28d5efb3e980.png) 
+
 # *To deploy complete Infrastructure-*
+
 ## In Order to Build the Complete Infrastructure, At first we have to initialize Terraform -
 
-# Step1: # terraform init
+# Step1: 
+```
+terraform init
+```
 
 ![image](https://user-images.githubusercontent.com/61896468/95456522-17d7f600-098d-11eb-8bfe-18076eef292c.png) 
 
 # To check if any error if present or not-
 
-# Step2: #terraform validate
+# Step2: 
+```
+terraform validate
+```
 
 ![image](https://user-images.githubusercontent.com/61896468/95456637-42c24a00-098d-11eb-882a-10ed13034201.png)
 
  
-## It’s always good to check what we are planning to build , So before running the Actual Code . First we should check our plan
+## ` It’s always good to check what we are planning to build , So before running the Actual Code . First we should check our plan`
 
 
-# Step3: #terraform plan
+# Step3: 
+```
+terraform plan
+```
 
 ![image](https://user-images.githubusercontent.com/61896468/95456704-58d00a80-098d-11eb-8321-97b46e1a2825.png) 
 
 ## So , After knowing the Plan . Here , We can set-up the Complete Infrastructure in just a single-click .
 
 
-# Step4: #terraform apply — auto-approve
+# Step4: 
+```
+terraform apply — auto-approve
+```
+
 ![image](https://user-images.githubusercontent.com/61896468/95456756-70a78e80-098d-11eb-8825-8963207366ad.png) 
 
 
-*To check the IP*
+# *To check the IP*
 
-# Step5: #minikube service list
+# Step5: 
+```
+minikube service list
+```
 
 ![image](https://user-images.githubusercontent.com/61896468/95456805-85842200-098d-11eb-82d5-b239162913c4.png) 
 
 # `To check if the deployment is running fine or not-`
 
-# Step6: #kubectl get all
+# Step6: 
+```
+kubectl get all
+```
 
 ![image](https://user-images.githubusercontent.com/61896468/95456849-9b91e280-098d-11eb-8998-868f9c9cbcc5.png) 
 
