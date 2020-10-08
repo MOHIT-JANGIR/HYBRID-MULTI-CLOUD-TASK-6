@@ -4,19 +4,20 @@
 
 # <p align="center">Task Description </p>
 
-## I have written Infrastructure as code using terraform, which automatically deploy the Wordpress application. On AWS, I have used RDS service for the relational database for Wordpress application. Then I deployed the Wordpress as a container on top of Minikube, the Wordpress application is accessible to the public world.
+# I have written Infrastructure as code using terraform, which automatically deploy the Wordpress application. On AWS, I have used RDS service for the relational database for Wordpress application. Then I deployed the Wordpress as a container on top of Minikube, the Wordpress application is accessible to the public world.
 
 
 
-# Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation
-
+# `Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation
+`
 
 
 ## A Kubernetes cluster is a set of node machines for running containerized applications. If you’re running Kubernetes, you’re running a cluster. At a minimum, a cluster contains a control plane and one or more compute machines, or nodes. The control plane is responsible for maintaining the desired state of the cluster, such as which applications are running and which container images they use. Nodes actually run the applications and workloads.
 
 
-*AWS RDS Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
-Minikube is an open-source tool that helps to run Kubernetes on a local computer. Before using minikube we need to start it so here I wrote terraform code to start minikube on my Local Computer.*
+# *AWS RDS Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+## *Minikube is an open-source tool that helps to run Kubernetes on a local computer. Before using minikube we need to start it so here I wrote terraform code to start minikube on my Local Computer.*
 # Practical part-
 
 `Deployed the WordPress Application on Kubernetes and MySQL Database on AWS Cloud using Terraform Code
@@ -181,6 +182,6 @@ resource "null_resource" "minikubeservice" {
 ![image](https://user-images.githubusercontent.com/61896468/95456339-cdef1000-098c-11eb-9af4-84fae6de5fc9.png)
 
 
-# `<p align="center">so finally i completed Hybrid cloud task 6,thanks a lot vimal sir and all the 24*7 working technical volunteers for all your seamless and thankful support </p>`
+# <p align="center"> so finally i completed Hybrid cloud task 6,thanks a lot vimal sir and all the 24*7 working technical volunteers for all your seamless and thankful support  </p>
 
 
